@@ -6,13 +6,37 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		AAB952EA2EAB35DD009CE3A2 /* HomeTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAB952E92EAB35DD009CE3A2 /* HomeTab.swift */; };
+		AAB952EC2EAB3601009CE3A2 /* AiTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAB952EB2EAB3601009CE3A2 /* AiTab.swift */; };
+		AAB952F82EAD9758009CE3A2 /* CameraInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAB952F72EAD9758009CE3A2 /* CameraInput.swift */; };
+		AAB952FA2EAD9DBA009CE3A2 /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAB952F92EAD9DBA009CE3A2 /* CameraView.swift */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		AAB952C92EAB33DA009CE3A2 /* MusicTutor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MusicTutor.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AAB952E92EAB35DD009CE3A2 /* HomeTab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTab.swift; sourceTree = "<group>"; };
+		AAB952EB2EAB3601009CE3A2 /* AiTab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AiTab.swift; sourceTree = "<group>"; };
+		AAB952F72EAD9758009CE3A2 /* CameraInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraInput.swift; sourceTree = "<group>"; };
+		AAB952F92EAD9DBA009CE3A2 /* CameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		AAB952F22EAB38AB009CE3A2 /* Exceptions for "MusicTutor" folder in "MusicTutor" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = AAB952C82EAB33DA009CE3A2 /* MusicTutor */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		AAB952CB2EAB33DA009CE3A2 /* MusicTutor */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				AAB952F22EAB38AB009CE3A2 /* Exceptions for "MusicTutor" folder in "MusicTutor" target */,
+			);
 			path = MusicTutor;
 			sourceTree = "<group>";
 		};
@@ -32,6 +56,10 @@
 		AAB952C02EAB33DA009CE3A2 = {
 			isa = PBXGroup;
 			children = (
+				AAB952F72EAD9758009CE3A2 /* CameraInput.swift */,
+				AAB952F92EAD9DBA009CE3A2 /* CameraView.swift */,
+				AAB952EB2EAB3601009CE3A2 /* AiTab.swift */,
+				AAB952E92EAB35DD009CE3A2 /* HomeTab.swift */,
 				AAB952CB2EAB33DA009CE3A2 /* MusicTutor */,
 				AAB952CA2EAB33DA009CE3A2 /* Products */,
 			);
@@ -119,6 +147,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AAB952F82EAD9758009CE3A2 /* CameraInput.swift in Sources */,
+				AAB952EA2EAB35DD009CE3A2 /* HomeTab.swift in Sources */,
+				AAB952FA2EAD9DBA009CE3A2 /* CameraView.swift in Sources */,
+				AAB952EC2EAB3601009CE3A2 /* AiTab.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -253,6 +285,8 @@
 				CURRENT_PROJECT_VERSION = 1;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MusicTutor/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "This app records playing to get feedback from AI";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -280,6 +314,8 @@
 				CURRENT_PROJECT_VERSION = 1;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MusicTutor/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "This app records playing to get feedback from AI";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
