@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		00A1D1AE2EAF0D11009772CE /* profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00A1D1AD2EAF0D11009772CE /* profile.swift */; };
+		00A1D1B02EAF0E0C009772CE /* ProfileData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00A1D1AF2EAF0E0C009772CE /* ProfileData.swift */; };
 		AAB952EA2EAB35DD009CE3A2 /* HomeTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAB952E92EAB35DD009CE3A2 /* HomeTab.swift */; };
 		AAB952EC2EAB3601009CE3A2 /* AiTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAB952EB2EAB3601009CE3A2 /* AiTab.swift */; };
 		AAB952F82EAD9758009CE3A2 /* CameraInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAB952F72EAD9758009CE3A2 /* CameraInput.swift */; };
@@ -14,6 +16,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		00A1D1AD2EAF0D11009772CE /* profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = profile.swift; sourceTree = "<group>"; };
+		00A1D1AF2EAF0E0C009772CE /* ProfileData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileData.swift; sourceTree = "<group>"; };
 		AAB952C92EAB33DA009CE3A2 /* MusicTutor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MusicTutor.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AAB952E92EAB35DD009CE3A2 /* HomeTab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTab.swift; sourceTree = "<group>"; };
 		AAB952EB2EAB3601009CE3A2 /* AiTab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AiTab.swift; sourceTree = "<group>"; };
@@ -60,6 +64,8 @@
 				AAB952F92EAD9DBA009CE3A2 /* CameraView.swift */,
 				AAB952EB2EAB3601009CE3A2 /* AiTab.swift */,
 				AAB952E92EAB35DD009CE3A2 /* HomeTab.swift */,
+				00A1D1AD2EAF0D11009772CE /* profile.swift */,
+				00A1D1AF2EAF0E0C009772CE /* ProfileData.swift */,
 				AAB952CB2EAB33DA009CE3A2 /* MusicTutor */,
 				AAB952CA2EAB33DA009CE3A2 /* Products */,
 			);
@@ -149,8 +155,10 @@
 			files = (
 				AAB952F82EAD9758009CE3A2 /* CameraInput.swift in Sources */,
 				AAB952EA2EAB35DD009CE3A2 /* HomeTab.swift in Sources */,
+				00A1D1AE2EAF0D11009772CE /* profile.swift in Sources */,
 				AAB952FA2EAD9DBA009CE3A2 /* CameraView.swift in Sources */,
 				AAB952EC2EAB3601009CE3A2 /* AiTab.swift in Sources */,
+				00A1D1B02EAF0E0C009772CE /* ProfileData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

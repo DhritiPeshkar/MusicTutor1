@@ -6,16 +6,49 @@
 //
 
 import SwiftUI
-import Foundation
 import AVFoundation
+import _AVKit_SwiftUI
 
-class PreviewView: CameraView {
-    override class var layerClass: AnyClass {
-        return AVCaptureVideoPreviewLayer.self
+struct CameraView: View {
+    @State private var showPicker = false
+    @State private var videoURL: URL?
+
+    var body: some View {
+        VStack(spacing: 20) {
+            if let videoURL = videoURL {
+                VideoPlayer(player: AVPlayer(url: videoURL))
+                   // .frame(height: 300)
+                
+                Button("Upload Video") {
+                    uploadVideo(videoURL)
+                }
+                .buttonStyle(.borderedProminent)
+                .buttonBorderShape(.capsule)
+            }
+
+            Button("Upload Video") {
+                showPicker = true
+            }
+            .buttonStyle(.borderedProminent)
+            .buttonBorderShape(.capsule)
+            
+            Button("Record Video")
+            {
+                
+            }
+        }
+        .sheet(isPresented: $showPicker) {
+            VideoPicker(videoURL: $videoURL)
+        }
     }
-    
-    /// Convenience wrapper to get layer as its statically known type.
-    var videoPreviewLayer: AVCaptureVideoPreviewLayer {
-        return layer as! AVCaptureVideoPreviewLayer
+
+    func uploadVideo(_ url: URL) {
+        // Placeholder upload logic — replace this with Firebase/AWS/etc.
+        print("Uploading video at: \(url.path)")
     }
 }
+
+#Preview {
+    CameraView()
+}
+

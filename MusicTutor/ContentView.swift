@@ -5,7 +5,6 @@
 //  Created by Dhriti Peshkar on 10/23/25.
 //
 
-
 import SwiftUI
 
 struct ContentView: View {
@@ -14,34 +13,22 @@ struct ContentView: View {
             HomeTab()
                 .tabItem {
                     Label("Home", systemImage: "house.fill")
-                    Text("Home View")
-                        .tabItem {
-                            Image(systemName: "house.fill")
-                            Text("Home")
-                        }
-                    
-                    
                 }
-           // CameraInput()
-             // .tabItem {
-               // Label("Record Audio", systemImage: "mic")
+
+            
+            CameraView()
+                .tabItem {
+                    Label("Video", systemImage: "camera")
                 }
             AiTab()
                 .tabItem {
-                    Label("Record Audio", systemImage: "gear")
-
+                    Label("Get feedback", systemImage: "gear")
                 }
-                }
-        }
-    //}
-    
-    struct ContentView_Previews: PreviewProvider {
-        static var previews: some View {
-            ContentView()
         }
     }
+}
 
-
+// Use #Preview ONLY outside of the struct
 #Preview {
     ContentView()
 }
