@@ -8,6 +8,9 @@
 import SwiftUI
 import AVFoundation
 import _AVKit_SwiftUI
+import Foundation
+
+
 
 struct CameraView: View {
     @State private var showPicker = false
